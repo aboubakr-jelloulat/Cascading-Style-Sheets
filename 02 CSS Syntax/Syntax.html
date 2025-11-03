@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Selectors</title>
+	<style>
+		/* Element Selector */
+		p
+		{
+			color: rgb(117, 102, 102);
+			font-family:Georgia, 'Times New Roman', Times, serif;
+			font-size: medium;
+		}
+		/* Style for the table element */
+		table
+		{
+			width: 60%;
+			border-collapse: collapse;
+			margin: 20px 0;
+		}
+		 /* Style for table, th, and td elements */
+		table,
+		th,
+		td
+		{
+			border:1px solid blueviolet;
+			color: chocolate;
+		}
+		h1
+		{
+			color: blueviolet;
+		}
+		/* ID Selector */
+		#intro
+		{
+			color: rgb(241, 58, 7);
+			font-size: 120%;
+		}
+		/* Attribute Selector */
+		input[type="text"]
+		{
+			border: 2px solid bleu;
+			padding:  4px;
+			cursor:grab
+		}
+
+		a:hover
+		{
+			color: blue;
+		}
+		a::placeholder
+		{
+			color: antiquewhite;
+			font-family: Georgia, 'Times New Roman', Times, serif;
+		}
+		 /* Class Selector */
+		.highlight 
+		{
+      		color: blue;
+    	}
+
+	</style>
+</head>
+<body>
+	<h1>CSS Selectors in Action!</h1>
+
+	<p id="intro">This is a normal paragraph styled using an element selector.</p>
+	<p class="highlight">This paragraph is highlighted using a class selector</p>
+	<p>his paragraph is uniquely styled using an ID selector</p>
+
+	<input type="text" name="login" id="login" placeholder="Enter your login"> <br><br>
+
+	<a href="https://www.finn.no/?srsltid=AfmBOoqtv1Pl4Hf5G4aVYn2bwMbcgtcWlQcRG0QntJ6NLh9wD-uj6K5-" target="_blank">Finno.no</a>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Login</th>
+				<th>Department</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>ajelloul</td>
+				<td>IT</td>
+			</tr>
+			<tr>
+				<td>jlumakina</td>
+				<td>Desgin</td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>
