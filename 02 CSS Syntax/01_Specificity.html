@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Specificity</title>
+	<style>
+		/* Element Selector: Lowest specificity */
+		p
+		{
+			color: blue;
+		}
+		/* Class Selector: Medium specificity */
+		.important
+		{
+			color: blueviolet;
+		}
+		/* ID Selector: Higher specificity */
+		#special
+		{
+			color: cyan;
+		}
+		.outro
+		{
+			color: red;
+			font-style: italic;
+		}
+	</style>
+</head>
+<body>
+	<p id="special" class="important" style="color: red;"> 
+		This text will be red because inline styles win the contest!
+	</p>
+	<p id="special" class="important">
+		This text will be cyan because ID slector win the contest!
+	</p>
+	<p class="important">
+		This text will be blueviolet because class slector win the contest!
+	</p>
+	<p>
+		This text will be blue because element slector has lowest specificity and no other specificity compete with it.
+	</p>
+	<br><br>
+	<div class="outro">
+		<p class="outro">the following order (from highest to lowest):</p>
+			<p class="outro">
+				inline   > IDS > Class > Attributes  > pseudo-elements
+			</p>
+	</div>
+
+</body>
+</html>
