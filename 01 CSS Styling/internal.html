@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal CSS Example</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 80px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1 {
+      color: #6a1b9a;
+    }
+
+    p {
+      color: #333;
+      font-size: 18px;
+    }
+
+    .highlight {
+      color: #ab47bc;
+      font-weight: bold;
+    }
+
+    .info {
+      background-color: #f3e5f5;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Internal CSS</h1>
+    <p>
+      Internal CSS is written inside a <span class="highlight">&lt;style&gt;</span> tag in the head section.
+    </p>
+    <p class="info">
+      All elements on this page are styled using the internal CSS rules above.
+    </p>
+  </div>
+</body>
+</html>
