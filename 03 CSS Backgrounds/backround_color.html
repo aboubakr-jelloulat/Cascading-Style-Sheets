@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background color</title>
+    <style>
+        header
+        {
+            background-color: bisque;
+            text-align: center;
+        }
+        section
+        {
+            background-color: burlywood;
+            padding: 20px;
+            border: 2px solid black;
+
+        }
+        h1, h2
+        {
+            background-color: antiquewhite;
+            color: rgb(175, 109, 29);
+        }
+        p::first-line
+        {
+            background-color: rgb(69, 99, 148);
+        }
+        span
+        {
+            background-color: brown;
+            text-align: end;
+        }
+        ul li:nth-child(odd)
+        {
+            background-color: #E0F7FA;
+            padding: 5px;
+        }
+        ul li:nth-child(even)
+        {
+            background-color: #B2EBF2;
+            padding: 5px;
+        }
+        table
+        {
+            width: 50%;
+            border: 2px solid black;
+            
+        }
+        th
+        {
+            background-color: rgb(29, 164, 160);
+            padding: 10px;
+            color: black;
+        }
+        td
+        {
+            background-color: #B2EBF2;
+            padding: 10px;
+            color: rgb(111, 97, 97);  
+        }
+
+        input, button
+        {
+            background-color: #FFF; /* White background */
+            padding: 8px;
+            border: 1px solid #AAA;
+            margin-bottom: 10px;
+        }
+        a 
+        {
+            background-color: #03A9F4; /* Light blue background */
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Css Background Color Lesson : </h1>
+    </header>
+
+    <section>
+        <h2>Text Elements : </h2>
+        <p>
+            This paragraph demonstrates the use of background-color with a burlywood hue. Notice how the first line has a light bleu background due to the pseudo-element styling.
+            <br>
+            This is the second line in the paragraph.
+        </p>
+        <span>This span element is styled with a red background </span>
+    </section>
+    
+    <section>
+        <h2>Lists</h2>
+        <ul>
+            <li>List Item One</li>
+            <li>List Item Two</li>
+            <li>List Item Three</li>
+            <li>List Item Four</li>
+        </ul>
+    </section>
+   
+    <section>
+        <h2>Tables</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Order number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>sofas</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Tables</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Login Form</h2>
+        <form>
+            <label for="name">Login</label><br>
+            <input type="text", id="name", placeholder="Enter your login"><br>
+            <label for="password">password</label><br>
+            <input type="password", placeholder="********"><br>
+            <label for="password"></label><br>
+
+            <button type="submit">submit</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Links</h2>
+        <p>
+            <a href="https://ikea.com" target="_blank"> Hej! Visit Us </a>
+        </p>
+    </section>
+</body>
+</html>
