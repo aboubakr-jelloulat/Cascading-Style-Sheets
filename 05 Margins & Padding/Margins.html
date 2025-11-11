@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Margins Lesson</title>
+
+	<style>
+		body {
+			background-color: bisque;
+			font-family: Arial, sans-serif;
+			line-height: 1.5;
+			margin: 20px;
+		}
+
+		h3 {
+			color: blueviolet;
+			margin-top: 30px;
+		}
+
+		p {
+			margin: 10px 0;
+		}
+
+		.box {
+			background-color: rgb(158, 203, 203);
+			margin: 10px;
+			padding: 10px;
+			border: 1px solid black;
+		}
+
+		.container {
+			background-color: rgb(158, 203, 203);
+			border: 1px solid black;
+			margin-top: 30px;
+			margin-right: 50px;
+			margin-bottom: 30px;
+			margin-left: 50px;
+			padding: 15px;
+		}
+		.one-value {
+			margin: 20px; /* All sides 20px */
+			background-color: #fce4ec;
+			padding: 10px;
+		}
+			.two-values {
+			margin: 10px 30px; /* 10px top and bottom, 30px left and right */
+			background-color: #e8f5e9;
+			padding: 10px;
+		}
+			.three-values {
+			margin: 5px 15px 25px; /* 5px top, 15px left/right, 25px bottom */
+			background-color: #e3f2fd;
+			padding: 10px;
+		}
+			.four-values {
+			margin: 10px 20px 30px 40px; /* Top, right, bottom, left */
+			background-color: #fff3e0;
+			padding: 10px;
+    	}
+
+		.negative-margin {
+			background-color: rgb(158, 203, 203);
+			border: 1px solid black;
+			margin: -20px; /* Negative margin pulls the element closer or overlaps others */
+			padding: 20px;
+		}
+
+		.centered {
+			width: 50%;
+			background-color: rgb(158, 203, 203);
+			margin: 20px auto; /* auto centers horizontally */
+			padding: 20px;
+			text-align: center;
+			border: 1px solid black;
+		}
+
+		.parent {
+			background-color: #f0f4c3;
+			/* No border or padding, so margins may collapse with its children */
+			margin: 40px 20px;
+		}
+		.parent p {
+			background-color: #e6ee9c;
+			margin: 20px;
+			padding: 10px;
+		}
+
+		a {
+			color: blueviolet;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+
+<body>
+	<h3>What are Margins?</h3>
+	<p>
+		The <b>margin</b> property in CSS creates space <b>outside</b> an element's border.
+	</p>
+
+	<h3>Example: Basic Margin</h3>
+	<div class="box">
+		<p>This is a simple box with a 10px margin.</p>
+	</div>
+
+	<h3>Example: Individual Margins</h3>
+	<div class="container">
+		<p>This container has 30px margin on top and bottom, and 50px on the sides.</p>
+	</div>
+
+	<h3>Example: IMargin Shorthand Variations</h3>
+		<div class="one-value">Margin: 20px on all sides.</div>
+		<div class="two-values">Margin: 10px top/bottom, 30px left/right.</div>
+		<div class="three-values">Margin: 5px top, 15px left/right, 25px bottom.</div>
+		<div class="four-values">Margin: 10px top, 20px right, 30px bottom, 40px left.</div>
+
+	<h3>Example: Negative Margins</h3>
+	<div class="negative-margin">
+		This box uses a negative margin to pull itself closer to other elements.
+	</div>
+
+	<h3>Example: Auto Margins (Centering)</h3>
+	<div class="centered">
+		This box is centered horizontally using <code>margin: auto;</code>.
+	</div>
+
+	<br>
+	<h3>Margin Collapse ?</h3>
+	<div class="no-collapse">
+		<p>This paragraph is inside a padded container. The container’s padding prevents the child margins from collapsing with the container’s margins.</p>
+		<p>This is another paragraph inside the same container with full margins intact.</p>
+	</div>
+
+	<div class="parent">
+		<p>The top margin of this paragraph may collapse with the parent's top margin, reducing the overall space.</p>
+		<p>Similarly, the bottom margin may collapse with the parent's bottom margin.</p>
+	</div>
+
+	<div style="margin-top: 40px;">
+		<p><b>Summary:</b> Margins control the space outside elements.</p>
+		<p>
+			👉 <a href="Margins.png">Click here to see a visual summary of this lesson</a>
+		</p>
+	</div>
+
+</body>
+</html>
