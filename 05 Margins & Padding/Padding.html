@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Padding Lesson</title>
+
+	<style>
+		body {
+			background-color: bisque;
+			font-family: Arial, sans-serif;
+			line-height: 1.5;
+			margin: 20px;
+		}
+
+		h3 {
+			color: blueviolet;
+			margin-top: 30px;
+		}
+
+		p {
+			margin: 10px 0;
+		}
+
+		.box {
+			background-color: rgb(158, 203, 203);
+			padding: 20px;
+			border: 1px solid black;
+			margin: 10px 0;
+		}
+
+		.container {
+			background-color: rgb(158, 203, 203);
+			border: 1px solid black;
+			padding-top: 40px;
+			padding-right: 20px;
+			padding-bottom: 40px;
+			padding-left: 20px;
+			margin: 10px 0;
+		}
+
+		.shorthand {
+			background-color: rgb(158, 203, 203);
+			border: 1px solid black;
+			padding: 10px 30px 20px 50px; /* top, right, bottom, left */
+			margin: 10px 0;
+		}
+
+		.text-box {
+			background-color: rgb(158, 203, 203);
+			border: 1px solid black;
+			padding: 30px;
+			text-align: center;
+			margin: 10px 0;
+		}
+
+		a {
+			color: blueviolet;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+
+<body>
+	<h3>What is Padding?</h3>
+	<p>
+		The <b>padding</b> property in CSS creates space <b>inside</b> an element — between its content and its border.
+	</p>
+
+	<h3>Example: Basic Padding</h3>
+	<div class="box">
+		This box has 20px of padding on all sides.
+	</div>
+
+	<h3>Example: Individual Padding Values</h3>
+	<div class="container">
+		This box has different padding for top (40px), bottom (40px), and sides (20px).
+	</div>
+
+	<h3>Example: Shorthand Padding</h3>
+	<div class="shorthand">
+		This box uses shorthand padding: 10px (top), 30px (right), 20px (bottom), 50px (left).
+	</div>
+
+	<h3>Example: Padding and Text Alignment</h3>
+	<div class="text-box">
+		This text is centered and has 30px of padding inside the box.
+	</div>
+
+</body>
+</html>
